@@ -1,0 +1,1091 @@
+/******* Style pour le corps du document *******/
+body {
+    /* Police de caractères */
+    font-family: Arial, sans-serif;
+    /* Suppression des marges par défaut */
+    margin: 0;
+    /* Suppression des espaces internes par défaut */
+    padding: 0;
+    /* Dégradé de fond */
+    background: #f1f1f1;
+    /* Animation de changement de fond */
+   /* animation: backgroundChange 10s infinite alternate;
+*/}
+
+
+/* Style pour le corps du document */
+
+
+
+/* Style pour la barre de navigation */
+nav {
+    /* Couleur de fond */
+    background-color: #2c3e50;
+    /* Espacement interne */
+    padding: 10px 20px;
+    /* Position collante */
+    position: sticky;
+    /* Position en haut */
+    top: 0;
+    /* Ordre de superposition */
+    z-index: 1000;
+    /* Flexbox pour l'alignement */
+    display: flex;
+    /* Alignement vertical centré */
+    align-items: center;
+    /* Alignement horizontal entre les éléments */
+    justify-content: space-between; /* Permet de séparer le logo et les onglets */
+    /* Hauteur de la barre de navigation */
+    height: 60px;
+    flex-wrap: wrap; /* Allow wrapping for small screens */
+}
+
+/* Style pour le logo */
+nav img {
+    /* Taille du logo */
+    width: 40px;
+    height: 40px;
+    /* Bordure arrondie */
+    border-radius: 50%;
+}
+
+/* Style pour le bouton de navigation */
+.nav-toggle {
+    /* Affichage sur petits écrans */
+    display: none;
+    /* Couleur de fond */
+    background: none;
+    /* Bordure nulle */
+    border: none;
+    /* Couleur du texte */
+    color: #ecf0f1;
+    /* Taille de la police */
+    font-size: 24px;
+    /* Curseur pointeur */
+    cursor: pointer;
+}
+
+/* Style pour la liste non ordonnée */
+nav ul {
+    /* Suppression des puces de liste */
+    list-style-type: none;
+    /* Suppression des marges */
+    margin: 0;
+    /* Suppression des espacements internes */
+    padding: 0;
+    /* Utilisation de flexbox */
+    display: flex;
+    /* Alignement vertical centré */
+    align-items: center;
+    /* Alignement horizontal centré */
+    justify-content: flex-end; /* Permet de pousser les onglets à droite */
+    flex-wrap: wrap; /* Allow wrapping for small screens */
+    flex: 1; /* Permet à la liste de prendre tout l'espace disponible */
+}
+
+/* Cacher les éléments de la liste sur petits écrans par défaut */
+nav ul.collapsed {
+    display: none;
+}
+
+/* Style pour les éléments de la liste */
+nav ul li {
+    display: inline-block; /* Changé de 'inline' à 'inline-block' */
+    margin: 5px 10px; /* Augmenté la marge pour plus d'espacement */
+}
+
+
+/* Style pour les liens du menu */
+nav ul li a {
+    color: #ecf0f1;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 15px; /* Augmenté le padding pour une plus grande zone cliquable */
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+    display: inline-block; /* Assurez-vous que le lien occupe tout l'espace disponible */
+    min-width: 44px; /* Largeur minimale recommandée pour les cibles tactiles */
+    min-height: 44px; /* Hauteur minimale recommandée pour les cibles tactiles */
+    line-height: 44px; /* Alignement vertical du texte */
+    /* Transition pour les effets */
+    transition: background-color 0.3s, color 0.3s;
+    margin-top: -20px;
+}
+
+/* Effet de survol pour les liens du menu */
+nav ul li a:hover {
+    /* Couleur de fond au survol */
+    background-color: #2980b9;
+    /* Couleur du texte au survol */
+    color: #fff;
+}
+
+
+/* Media query pour les écrans tactiles */
+@media (pointer: coarse) {
+    nav ul li {
+        margin: 10px; /* Augmente encore l'espacement sur les appareils tactiles */
+    }
+    
+    nav ul li a {
+        padding: 15px 20px; /* Augmente encore la taille de la zone cliquable */
+    }
+}
+/******* Style pour la barre de navigation *******/
+
+
+
+/******* Style pour les titres principaux *******/
+h1 {
+    /* Couleur du texte */
+    color: #2c3e50;
+    /* Alignement centré */
+    text-align: center;
+    /* Marges */
+    margin: 20px 40px;
+    /* Flexbox pour l'alignement */
+    display: flex;
+    /* Alignement vertical centré */
+    align-items: center;
+    /* Alignement horizontal centré */
+    justify-content: center;
+}
+
+/* Style pour l'image dans le titre */
+h1 .logo {
+    /* Marge à gauche de l'image */
+    margin-left: 30px;
+    /* Taille de l'image */
+    width: 70px;
+    height: 70px;
+    /* Bordure arrondie */
+    border-radius: 50%;
+    
+}
+.logo{
+    margin-top: 6px;
+}
+/******* Style pour les titres principaux *******/
+
+
+
+/******* Style pour les sous-titres *******/
+h2 {
+    /* Couleur du texte */
+    color: #2c3e50;
+    /* Marges */
+    margin: 20px;
+}
+/******* Style pour les sous-titres *******/
+
+
+
+/******* Style pour les paragraphes *******/
+p {
+    /* Taille de la police */
+    font-size: 16px;
+    /* Hauteur de ligne */
+    line-height: 1.5;
+    /* Marges */
+    margin: 0 20px;
+}
+/******* Style pour les paragraphes *******/
+
+
+
+
+/******* Style pour la liste ordonnée *******/
+ol {
+    /* Marge intérieure */
+    padding-left: 20px;
+    /* Marge extérieure */
+    margin: 20px 20px;
+    /* Type de numérotation */
+    list-style-type: decimal;
+}
+
+/* Style pour les éléments de la liste ordonnée */
+ol li {
+    /* Couleur du texte */
+    color: #34495e;
+    /* Taille de la police */
+    font-size: 18px;
+    /* Marge entre les éléments */
+    margin-bottom: 10px;
+    /* Bordure inférieure */
+    border-bottom: 1px solid #bdc3c7;
+    /* Espacement interne */
+    padding: 5px 0;
+}
+/******* Style pour la liste ordonnée *******/
+
+
+
+/******* Style pour les images *******/
+img {
+    /* Largeur maximale */
+    max-width: 100%;
+    /* Hauteur automatique */
+    height: auto;
+    /* Bordure */
+    border: 2px solid #bdc3c7;
+    /* Ombre */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    /* Bordure arrondie */
+    border-radius: 8px;
+    /* Affichage en bloc */
+    display: block;
+    /* Marge automatique */
+    margin: 20px auto;
+    /* Transition pour les effets */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Effet de survol pour les images */
+img:hover {
+    /* Agrandissement au survol */
+    transform: scale(1.5);
+    /* Ombre plus prononcée au survol */
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2);
+}
+/******* Style pour les images *******/
+
+
+
+
+/******* Style pour la carte interactive *******/
+#carte {
+    /* Marges */
+    margin: 20px 0;
+    /* Espacement interne */
+    padding: 20px;
+    /* Bordure */
+    border: 2px solid #2c3e50;
+    /* Bordure arrondie */
+    border-radius: 8px;
+    /* Ombre */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    /* Alignement du texte */
+    text-align: center;
+}
+/******* Style pour la carte interactive *******/
+
+
+
+/******* Style pour les boutons des régions *******/
+.region-btn {
+    /* Affichage en ligne */
+    display: inline-block;
+    /* Marges */
+    margin: 10px;
+    /* Espacement interne */
+    padding: 10px 20px;
+    /* Couleur de fond */
+    background-color: #3498db;
+    /* Couleur du texte */
+    color: #fff;
+    /* Suppression de la bordure */
+    border: none;
+    /* Bordure arrondie */
+    border-radius: 5px;
+    /* Curseur pointeur */
+    cursor: pointer;
+    /* Taille de la police */
+    font-size: 16px;
+}
+
+/* Effet de survol pour les boutons des régions */
+.region-btn:hover {
+    /* Couleur de fond au survol */
+    background-color: #2980b9;
+}
+/******* Style pour les boutons des régions *******/
+
+
+
+
+/******* Style pour la vidéo *******/
+video {
+    /* Largeur maximale */
+    max-width: 80%;
+    /* Hauteur automatique */
+    height: auto;
+    /* Bordure */
+    border: 2px solid #bdc3c7;
+    /* Ombre */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    /* Bordure arrondie */
+    border-radius: 8px;
+    /* Centrage */
+    display: block;
+    /* Marge automatique */
+    margin: 20px auto;
+}
+/******* Style pour la vidéo *******/
+
+
+
+
+/******* Style pour le formulaire *******/
+form {
+    /* Largeur du formulaire */
+    width: 500px;
+    /* Marges automatiques */
+    margin: 20px auto;
+    /* Bordure */
+    border: 1px solid #ccc;
+    /* Bordure arrondie */
+    border-radius: 5px;
+    /* Espacement interne */
+    padding: 16px;
+    /* Couleur de fond */
+    background-color: #f9f9f9;
+    /* Flexbox pour l'alignement */
+    display: flex;
+    /* Alignement en colonne */
+    flex-direction: column;
+    /* Alignement centré */
+    align-items: center;
+}
+
+/* Style pour les champs de saisie */
+input, textarea {
+    /* Largeur maximale */
+    width: 100%;
+    /* Espacement interne */
+    padding: 8px;
+    /* Marge inférieure */
+    margin-bottom: 10px;
+    /* Bordure */
+    border: 1px solid #ccc;
+    /* Bordure arrondie */
+    border-radius: 4px;
+}
+
+/* Style pour le bouton de soumission */
+button[type="submit"] {
+    /* Couleur de fond */
+    background-color: #3498db;
+    /* Couleur du texte */
+    color: #fff;
+    /* Suppression de la bordure */
+    border: none;
+    /* Bordure arrondie */
+    border-radius: 4px;
+    /* Espacement interne */
+    padding: 10px 20px;
+    /* Taille de la police */
+    font-size: 16px;
+    /* Curseur pointeur */
+    cursor: pointer;
+}
+
+/* Effet de survol pour le bouton de soumission */
+button[type="submit"]:hover {
+    /* Couleur de fond au survol */
+    background-color: #2980b9;
+}
+/******* Style pour le formulaire *******/
+
+
+
+/******* Animation pour un fondu en entrée pour l'appliquer à toutes les parties section *******/
+@keyframes fadeIn {
+    /* Étape initiale */
+    from { opacity: 0; }
+    /* Étape finale */
+    to { opacity: 1; }
+}
+
+/* Application de l'animation sur les sections */
+section {
+    /* Animation de fondu */
+    animation: fadeIn 2s ease-in-out;
+}
+/******* Animation pour un fondu en entrée pour l'appliquer à toutes les parties section *******/
+
+
+
+
+/******* Style pour le conteneur du graphique *******/
+#myChart {
+    /* Largeur maximale */
+    max-width: 421px;
+    /* Hauteur maximale */
+    max-height: 316px;
+    /* Centrage */
+    margin: 20px auto;
+    /* Bordure */
+    border: 1px solid #ccc;
+    /* Bordure arrondie */
+    border-radius: 8px;
+    /* Ombre */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+/******* Style pour le conteneur du graphique *******/
+
+
+
+/******* Style pour la carte maps interactive *******/
+#map {
+    /* Largeur maximale */
+    width: 100%; /* Modified to 100% for responsiveness */
+    /* Hauteur fixe */
+    height: 400px;
+    /* Centrage */
+    margin: 20px auto;
+    /* Bordure */
+    border: 1px solid #ccc;
+    /* Bordure arrondie */
+    border-radius: 8px;
+    /* Ombre */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+/******* Style pour la carte maps interactive *******/
+
+
+
+/*--------------- Mise en page du carousel -------------------*/
+/******* Style pour le conteneur du carrousel *******/
+.carousel {
+    /* Position relative */
+    position: relative;
+    /* Largeur maximale */
+    width: 90%;
+    /* Largeur maximale en pixels */
+    max-width: 640px;
+    /* Hauteur fixe */
+    height: 427px;
+    /* Débordement caché */
+    overflow: hidden;
+    /* Bordure arrondie */
+    border-radius: 10px;
+    /* Ombre */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Centrage */
+    margin: 20px auto;
+    padding: 0;
+}
+/******* Style pour le conteneur du carrousel *******/
+
+/******* Style pour les images du carrousel *******/
+.carousel img {
+    /* Largeur maximale */
+    width: 100%;
+    /* Hauteur fixe */
+    height: 100%;
+    /* Recadrage de l'image */
+    object-fit: cover;
+    /* Masquage par défaut */
+    display: none;
+    margin: 0;
+}
+/******* Style pour les images du carrousel *******/
+
+/******* Style pour l'image active *******/
+.carousel img.active {
+    /* Affichage */
+    display: block;
+}
+/******* Style pour l'image active *******/
+
+/******* Style pour les contrôles *******/
+.carousel-control {
+    /* Position absolue */
+    position: absolute;
+    /* Positionnement vertical */
+    top: 50%;
+    /* Transformation verticale */
+    transform: translateY(-50%);
+    /* Couleur de fond */
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Couleur du texte */
+    color: white;
+    /* Suppression de la bordure */
+    border: none;
+    /* Espacement interne */
+    padding: 10px;
+    /* Curseur pointeur */
+    cursor: pointer;
+}
+/******* Style pour les contrôles *******/
+
+/******* Positionnement du contrôle gauche *******/
+.carousel-control.left {
+    /* Positionnement à gauche */
+    left: 10px;
+}
+/******* Style pour les contrôles *******/
+
+/******* Positionnement du contrôle droit *******/
+.carousel-control.right {
+    /* Positionnement à droite */
+    right: 10px;
+}
+/******* Positionnement du contrôle droit *******/
+/*--------------- Mise en page du carousel -------------------*/
+
+
+
+
+/******* Style pour le conteneur du tableau *******/
+table {
+    /* Largeur maximale */
+    width: 100%; /* Modified to 100% for responsiveness */
+    /* Largeur maximale en pixels */
+    max-width: 800px;
+    /* Centrage */
+    margin: 20px auto;
+    /* Suppression des bordures */
+    border-collapse: collapse;
+    /* Ombre */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Bordure arrondie */
+    border-radius: 10px;
+    /* Débordement caché */
+    overflow: hidden;
+}
+
+/* Style pour les en-têtes du tableau */
+thead {
+    /* Dégradé de fond */
+    background: linear-gradient(135deg, #3498db, #2980b9);
+    /* Couleur du texte */
+    color: white;
+}
+
+/* Style pour les cellules des en-têtes */
+thead th {
+    /* Espacement interne */
+    padding: 15px;
+    /* Alignement du texte */
+    text-align: left;
+    /* Taille de la police */
+    font-size: 1.2em;
+}
+
+/* Style pour les lignes du corps du tableau */
+tbody tr {
+    /* Couleur de fond */
+    background-color: white;
+    /* Bordure inférieure */
+    border-bottom: 1px solid #dddddd;
+}
+
+/* Style pour les lignes paires */
+tbody tr:nth-child(even) {
+    /* Couleur de fond */
+    background-color: #f9f9f9;
+}
+
+/* Effet de survol pour les lignes */
+tbody tr:hover {
+    /* Couleur de fond */
+    background-color: #f1f1f1;
+}
+
+/* Style pour les cellules du corps du tableau */
+tbody td {
+    /* Espacement interne */
+    padding: 15px;
+    /* Alignement du texte */
+    text-align: left;
+}
+
+/* Style pour rendre le tableau responsive */
+@media (max-width: 600px) {
+    table, thead, tbody, th, td, tr {
+        /* Affichage en bloc */
+        display: block;
+    }
+
+    /* Masquage des en-têtes */
+    thead tr {
+        display: none;
+    }
+
+    /* Style pour les lignes du corps */
+    tbody tr {
+        /* Marge inférieure */
+        margin-bottom: 10px;
+        /* Bordure */
+        border: 1px solid #dddddd;
+        /* Bordure arrondie */
+        border-radius: 10px;
+        /* Ombre */
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Style pour les cellules du corps */
+    tbody td {
+        /* Flexbox pour l'alignement */
+        display: flex;
+        /* Alignement horizontal */
+        justify-content: space-between;
+        /* Alignement vertical */
+        align-items: center;
+        /* Espacement interne */
+        padding: 10px;
+        /* Bordure inférieure */
+        border-bottom: 1px solid #dddddd;
+    }
+
+    /* Suppression de la bordure inférieure pour la dernière cellule */
+    tbody td:last-child {
+        border-bottom: none;
+    }
+
+    /* Style pour les labels */
+    tbody td::before {
+        /* Contenu du label */
+        content: attr(data-label);
+        /* Flexbox pour l'alignement */
+        flex: 1;
+        /* Style de la police */
+        font-weight: bold;
+        /* Alignement du texte */
+        text-align: left;
+        /* Espacement interne */
+        padding-right: 10px;
+        /* Couleur du texte */
+        color: #3498db;
+    }
+}
+/******* Style pour le conteneur du tableau *******/
+
+
+
+
+/******* Style pour les infobulles *******/
+.tooltip {
+    /* Position relative */
+    position: relative;
+    /* Curseur pointeur */
+    cursor: pointer;
+}
+
+/* Style pour le texte des infobulles */
+.tooltiptext {
+    /* Invisibilité par défaut */
+    visibility: hidden;
+    /* Largeur */
+    width: 320px;
+    /* Couleur de fond */
+    background-color: black;
+    /* Couleur du texte */
+    color: #fff;
+    /* Alignement du texte */
+    text-align: center;
+    /* Bordure arrondie */
+    border-radius: 6px;
+    /* Espacement interne */
+    padding: 5px;
+    /* Positionnement absolu */
+    position: absolute;
+    /* Ordre de superposition */
+    z-index: 1;
+    /* Positionnement en bas */
+    bottom: 100%;
+    /* Positionnement à gauche */
+    left: 50%;
+    /* Marge à gauche */
+    margin-left: -60px;
+}
+
+/* Affichage des infobulles au survol */
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+/******* Style pour les infobulles *******/
+
+
+
+/******* Style pour le pied de page *******/
+footer {
+    /* Couleur de fond */
+    background: #2c3e50;
+    /* Espacement interne */
+    padding: 20px 0;
+    /* Alignement du texte */
+    text-align: center;
+    /* Position relative */
+    position: relative;
+    /* Ordre de superposition */
+    z-index: 1;
+}
+
+/* Style pour les liens de partage social */
+.social-share {
+    /* Flexbox pour l'alignement */
+    display: flex;
+    /* Espacement entre les éléments */
+    gap: 20px;
+    /* Alignement horizontal */
+    justify-content: center;
+}
+
+/* Style pour les liens de partage */
+.social-link {
+    /* Affichage en ligne */
+    display: inline-block;
+    /* Espacement interne */
+    padding: 15px 30px;
+    /* Taille de la police */
+    font-size: 16px;
+    /* Couleur du texte */
+    color: #fff;
+    /* Suppression du soulignement */
+    text-decoration: none;
+    /* Bordure arrondie */
+    border-radius: 30px;
+    /* Transition pour les effets */
+    transition: transform 0.3s, background 0.3s;
+}
+
+/* Style pour le lien de partage Facebook */
+.social-link.facebook {
+    background: #3b5998;
+}
+
+/* Style pour le lien de partage Twitter */
+.social-link.twitter {
+    background: #1da1f2;
+}
+
+/* Effet de survol pour les liens de partage */
+.social-link:hover {
+    /* Agrandissement */
+    transform: scale(1.1);
+}
+
+/* Effet d'activation pour les liens de partage */
+social-link:active {
+    /* Réduction */
+    transform: scale(1);
+}
+
+/* Style pour l'arrière-plan des liens de partage */
+.social-link::before {
+    /* Contenu vide */
+    content: '';
+    /* Position absolue */
+    position: absolute;
+    /* Largeur */
+    width: 100%;
+    /* Hauteur */
+    height: 100%;
+    /* Couleur de fond */
+    background: rgba(255, 255, 255, 0.2);
+    /* Positionnement en haut */
+    top: 0;
+    /* Positionnement à gauche */
+    left: 0;
+    /* Bordure arrondie */
+    border-radius: 30px;
+    /* Ordre de superposition */
+    z-index: -1;
+    /* Transition pour l'opacité */
+    transition: opacity 0.3s;
+    /* Opacité par défaut */
+    opacity: 0;
+}
+
+/* Affichage de l'arrière-plan au survol */
+.social-link:hover::before {
+    opacity: 1;
+}
+
+/* Animation de pulsation pour les liens */
+@keyframes pulse {
+    /* Étape initiale */
+    0% {
+        transform: scale(1);
+    }
+    /* Milieu de l'animation */
+    50% {
+        transform: scale(1.1);
+    }
+    /* Étape finale */
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Application de l'animation de pulsation pour Facebook */
+.social-link.facebook:hover {
+    animation: pulse 1s infinite;
+}
+
+/* Application de l'animation de pulsation pour Twitter */
+.social-link.twitter:hover {
+    animation: pulse 1s infinite;
+}
+/******* Style pour le pied de page *******/
+
+
+
+
+/******* Style pour le bouton de retour en haut *******/
+#backToTop {
+    /* Position fixe */
+    position: fixed;
+    /* Positionnement en bas */
+    bottom: 120px;
+    /* Positionnement à droite */
+    right: 40px;
+    /* Taille */
+    width: 50px;
+    height: 50px;
+    /* Couleur de fond */
+    background-color: #3498db;
+    /* Couleur du texte */
+    color: #fff;
+    /* Suppression de la bordure */
+    border: none;
+    /* Bordure arrondie */
+    border-radius: 50%;
+    /* Flexbox pour l'alignement */
+    display: flex;
+    /* Alignement horizontal */
+    justify-content: center;
+    /* Alignement vertical */
+    align-items: center;
+    /* Curseur pointeur */
+    cursor: pointer;
+    /* Ombre */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    /* Transition pour les effets */
+    transition: transform 0.3s, background-color 0.3s;
+    /* Opacité par défaut */
+    opacity: 0;
+    /* Invisibilité par défaut */
+    visibility: hidden;
+}
+
+/* Affichage du bouton de retour en haut */
+#backToTop.show {
+    /* Opacité */
+    opacity: 1;
+    /* Visibilité */
+    visibility: visible;
+}
+
+/* Effet de survol pour le bouton de retour en haut */
+#backToTop:hover {
+    /* Couleur de fond */
+    background-color: #2980b9;
+    /* Agrandissement */
+    transform: scale(1.1);
+}
+
+/* Effet d'activation pour le bouton de retour en haut */
+#backToTop:active {
+    /* Réduction */
+    transform: scale(1);
+}
+/******* Style pour le bouton de retour en haut *******/
+
+
+
+
+/******* Style de la barre de défilement pour les navigateurs WebKit *******/
+::-webkit-scrollbar {
+    /* Largeur de la barre de défilement */
+    width: 12px;
+}
+
+/* Style de la piste de la barre de défilement */
+::-webkit-scrollbar-track {
+    /* Dégradé de fond */
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(72, 238, 252, 0.5) 45%, #48eefc 50%, rgba(72, 238, 252, 0.5) 55%, rgba(0, 0, 0, 0) 100%);
+    /* Bordure arrondie */
+
+}
+
+/* Style de la poignée de la barre de défilement */
+::-webkit-scrollbar-thumb {
+    background-color: #48eefc;
+    box-shadow: 0px 0px 10px #3c6a90;
+    border-radius: 5px;
+    /* Bordure */
+}
+
+/* Effet de survol pour la poignée de la barre de défilement */
+::-webkit-scrollbar-thumb:hover {
+    /* Dégradé de fond */
+    background-color: #66f2ff;
+    border-radius: 5px;}
+/******* Style de la barre de défilement pour les navigateurs WebKit *******/
+
+
+
+/*-------------- Media Queries pour rendre la page responsive ---------------*/
+
+/* Écrans larges (desktops, 1024px et plus) */
+/* Média query pour les écrans à partir de 1024px de largeur */
+@media (min-width: 1024px) {
+
+    /* Ajoute un padding de 20px au body */
+    body {
+        padding: 20px;
+    }
+
+    /* Justifie le contenu du nav avec un espace entre les éléments */
+    nav {
+        justify-content: space-between;
+        /* Ajoute un padding de 20px en haut/bas et 50px à gauche/droite */
+        padding: 20px 50px;
+    }
+
+    /* Définit la largeur maximale du conteneur à 1000px */
+    .container {
+        max-width: 1000px;
+        /* Ajoute un padding de 50px */
+        padding: 50px;
+    }
+}
+
+/* Média query pour les écrans entre 768px et 1023px de largeur */
+@media (min-width: 768px) and (max-width: 1023px) {
+
+    /* Ajoute un padding de 10px au body */
+    body {
+        padding: 10px;
+    }
+
+    /* Définit la direction des éléments dans nav en ligne */
+    nav {
+        flex-direction: row;
+        /* Permet aux éléments de nav de passer à la ligne si nécessaire */
+        flex-wrap: wrap;
+        /* Ajoute un padding de 10px en haut/bas et 30px à gauche/droite */
+        padding: 10px 30px;
+    }
+
+    /* Définit la marge des liens dans nav à 10px en haut/bas et 5px à gauche/droite */
+    nav a {
+        margin: 10px 5px;
+        /* Définit la taille de la police des liens à 1em */
+        font-size: 1em;
+    }
+
+    /* Définit la largeur maximale du conteneur à 90% de la largeur de l'écran */
+    .container {
+        max-width: 90%;
+        /* Ajoute un padding de 30px */
+        padding: 30px;
+    }
+}
+
+/* Média query pour les écrans de moins de 768px de largeur (smartphones) */
+@media (max-width: 768px) {
+
+    /* Ajoute un padding de 5px au body */
+    body {
+        padding: 5px;
+    }
+
+    /* Affiche le bouton de navigation (nav-toggle) */
+    .nav-toggle {
+        display: block;
+    }
+
+    /* Définit la direction des éléments dans nav ul en colonne */
+    nav ul {
+        flex-direction: column;
+        /* Aligne les éléments à gauche */
+        align-items: flex-start;
+        /* Définit la couleur de fond du menu */
+        background-color: #34495e;
+        /* Positionne le menu de manière fixe à partir du haut de l'écran */
+        position: fixed;
+        /* Positionne le menu à 60px du haut */
+        top: 60px;
+        /* Positionne le menu à droite */
+        right: 0;
+        /* Définit la largeur du menu à 250px */
+        width: 250px;
+        /* Définit la hauteur du menu à 100% de l'écran */
+        height: 100%;
+        /* Cache le menu en le déplaçant à droite de 100% */
+        transform: translateX(100%);
+        /* Ajoute une transition pour le déplacement du menu */
+        transition: transform 0.3s ease;
+        /* Ajoute un padding de 20px au menu */
+        padding: 20px;
+    }
+
+    /* Affiche le menu quand la classe "collapsed" est appliquée */
+    nav ul.collapsed {
+        display: block;
+        /* Ramène le menu à sa position initiale (visible) */
+        transform: translateX(0);
+    }
+
+    /* Ajoute une marge de 10px en haut/bas aux éléments de la liste */
+    nav ul li {
+        margin: 10px 0;
+        /* Aligne le texte des éléments de la liste à gauche */
+        text-align: left;
+        /* Définit la largeur des éléments de la liste à 100% */
+        width: 100%;
+    }
+
+    /* Aligne le bouton à gauche dans les éléments de la liste */
+    nav ul li button {
+        align-self: flex-start;
+    }
+
+    /* Ajoute une marge de 5px en haut/bas aux liens de la liste */
+    nav ul li a {
+        margin: 5px 0;
+        /* Définit la taille de la police des liens à 16px */
+        font-size: 16px;
+    }
+
+    /* Définit la largeur maximale du conteneur à 95% de la largeur de l'écran */
+    .container {
+        max-width: 95%;
+        /* Ajoute un padding de 20px */
+        padding: 20px;
+    }
+
+    /* Définit la taille de la police du titre h1 à 1.8em */
+    h1 {
+        font-size: 1.8em;
+    }
+
+    /* Définit la taille de la police des paragraphes à 1em */
+    p {
+        font-size: 1em;
+    }
+
+    /* Définit la taille de la police des titres h2 à 1.5em */
+    h2 {
+        font-size: 1.5em;
+    }
+
+    /* Définit la largeur des formulaires à 100% de l'écran */
+    form {
+        width: 100%;
+    }
+
+    /* Définit le padding-bottom pour maintenir le ratio d'aspect des vidéos */
+    .video-container {
+        padding-bottom: 75%;
+    }
+
+    /* Définit la hauteur des carrousels swiper à 300px */
+    .swiper-container {
+        height: 300px;
+    }
+
+    /* Affiche le bouton de navigation sur petits écrans */
+    .nav-toggle {
+        display: block;
+    }
+}
+
+/*-------------- Media Queries pour rendre la page responsive ---------------*/
+
+

@@ -1,0 +1,228 @@
+<!-- Déclaration du type de document HTML5 -->
+<!DOCTYPE html>
+
+<!-- Début de la balise HTML avec spécification de la langue en français -->
+<html lang="fr">
+
+<!-- Début de la section head pour les métadonnées et les liens vers les ressources -->
+<head>
+    <!-- Déclaration du jeu de caractères utilisé, ici UTF-8 -->
+    <meta charset="utf-8">
+
+    <!-- Déclaration de la compatibilité avec les appareils mobiles -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Description de la page pour les moteurs de recherche -->
+    <meta name="description" content="Les troubles Dys appartiennent à la catégorie des troubles cognitifs spécifiques développementaux. Ils affectent une fonction précise de la cognition et ont pour conséquence une difficulté pour l’acquisition de connaissances.">
+
+    <!-- Auteur de la page -->
+    <meta name="author" content="Jean-Claude Lugo">
+
+    <!-- Information sur les droits d'auteur -->
+    <meta name="copyright" content="Jean-Claude Lugo">
+
+    <!-- Instructions pour les robots des moteurs de recherche -->
+    <meta name="robots" content="index, follow">
+
+    <!-- Lien vers la feuille de style CSS locale -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Lien vers la feuille de style CSS de Leaflet pour les cartes -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css">
+
+    <!-- Inclusion de la bibliothèque Chart.js pour les graphiques -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <!-- Lien vers le favicon au format ICO -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- Lien vers le favicon au format PNG, différentes tailles pour différents dispositifs -->
+    <link rel="icon" href="favicon.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="favicon.png" sizes="96x96" type="image/png">
+    <link rel="icon" href="favicon.png" sizes="16x16" type="image/png">
+
+    <!-- Lien vers l'icône pour les appareils Apple -->
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+    <!-- Lien vers le fichier manifest pour les Progressive Web Apps -->
+    <!--<link rel="manifest" href="manifest.json">-->
+
+    <!-- Titre de la page affiché dans l'onglet du navigateur -->
+    <title>Sensibilisation aux troubles Dys</title>
+    
+</head>
+
+<!-- Début du corps de la page -->
+<body>
+
+    <!-- Section en-tête de la page incluant la navigation -->
+    <header>
+        <nav>
+            <!-- Logo de la page -->
+            <img src="logo.png" alt="Logo" class="logo">
+
+            <!-- Bouton pour afficher/masquer la navigation sur petits écrans -->
+            <button id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation">&#9776;</button>
+
+            <!-- Menu de navigation principal sous forme de liste -->
+            <ul>
+                <li><a href="#dyslexie">Dyslexie</a></li>
+                <li><a href="#dysorthographie">Dysorthographie</a></li>
+                <li><a href="#dyspraxie">Dyspraxie</a></li>
+                <li><a href="#dyscalculie">Dyscalculie</a></li>
+                <li><a href="#dysphasie">Dysphasie</a></li>
+                <li><a href="#carte">Carte</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <!-- Titre principal de la page avec le logo -->
+        <h1>Sensibilisation aux troubles Dys avec : <img class="logo" src="6foisDys.png" alt="logo entreprise"></h1>
+
+        
+    </header>
+    <!-- Section en-tête de la page incluant la navigation -->
+
+
+
+    <!-- Contenu principal de la page -->
+    <main>
+        <!-- Section informative sur les troubles Dys -->
+        <section>
+            <p>Les troubles Dys sont des troubles spécifiques des apprentissages.</p>
+            <img src="dys.jpg" alt="Illustration des troubles Dys">
+            <p>
+                La <span class="tooltip">dyslexie :
+                <span class="tooltiptext">
+                    Trouble dont les causes ne sont pas suffisamment 
+                    éclaircies et qui fait l'objet de nombreuses études et débats.
+                </span>
+            </span> est un trouble courant.
+            </p>
+            <!-- Liste ordonnée des différents types de troubles Dys -->
+            <ol>
+                <li>Dyslexie</li>
+                <li>Dysorthographie</li>
+                <li>Dyspraxie</li>
+                <li>Dyscalculie</li>
+                <li>Dysphasie</li>
+            </ol>
+        </section>
+        <!-- Section informative sur les troubles Dys -->
+
+
+        <!-- Article détaillé sur la dyslexie -->
+        <article id="dyslexie">
+            <h2>Dyslexie</h2>
+            <p>La dyslexie est un trouble spécifique de la lecture.</p>
+        </article>
+        <!-- Article détaillé sur la dyslexie -->
+
+
+        <!-- Section contenant une vidéo explicative -->
+        <section>
+            <video controls loop>
+                <source src="video/troubles_dys.mp4" type="video/mp4">
+                <track src="captions_en.vtt" kind="captions" srclang="en" label="english_captions">
+                <track src="captions_fr.vtt" kind="captions" srclang="fr" label="french_captions">
+                Votre navigateur ne supporte pas la lecture de vidéos.
+            </video>
+        </section>
+        <!-- Section contenant une vidéo explicative -->
+
+
+        <!-- Section dédiée à la carte interactive des troubles Dys -->
+        <section id="carte">
+            <h2>Carte interactive des troubles Dys</h2>
+            <p>Cliquer sur une région pour en savoir plus.</p>
+            <button class="region-btn" data-region="nord">Région Nord</button>
+            <button class="region-btn" data-region="sud">Région Sud</button>
+        </section>
+        <!-- Section dédiée à la carte interactive des troubles Dys -->
+
+
+        <!-- Formulaire de contact pour poser des questions -->
+        <section id="contact">
+            <form>
+                <label for="nom">Nom :</label>
+                <input type="text" id="nom" name="nom">
+                <label for="email">Adresse mail :</label>
+                <input type="email" id="email" name="email">
+                <label for="message">Message :</label>
+                <textarea id="message" name="message"></textarea>
+                <button type="submit">Envoyer</button>
+            </form>
+        </section>
+        <!-- Formulaire de contact pour poser des questions -->
+
+
+        <!-- Zone pour un graphique (Canvas pour Chart.js) -->
+        <canvas id="myChart" width="421" height="316"></canvas>
+
+        <!-- Conteneur pour une carte (Leaflet) -->
+        <div id="map"></div>
+
+        <!-- Carrousel d'images pour la galerie -->
+        <div class="carousel">
+            <img src="image1.jpg" alt="Image 1" class="active">
+            <img src="image2.jpg" alt="Image 2">
+            <img src="image3.jpg" alt="Image 3">
+            <img src="image4.jpg" alt="Image 4">
+            <!-- Contrôles du carrousel -->
+            <button class="carousel-control left" onclick="prevImage()">&#10094;</button>
+            <button class="carousel-control right" onclick="nextImage()">&#10095;</button>
+        </div>
+        <!-- Carrousel d'images pour la galerie -->
+
+
+        <!-- Tableau comparatif des troubles Dys -->
+        <table>
+            <thead>
+                <tr>
+                    <th>Type de trouble</th>
+                    <th>Symptômes</th>
+                    <th>Solutions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td data-label="Type de trouble">Dyslexie</td>
+                    <td data-label="Symptômes">Difficulté à lire</td>
+                    <td data-label="Solutions">Orthophonie</td>
+                </tr>
+                <tr>
+                    <td data-label="Type de trouble">Dysorthographie</td>
+                    <td data-label="Symptômes">Problèmes d'orthographe</td>
+                    <td data-label="Solutions">Exercices spécifiques</td>
+                </tr>
+                <tr>
+                    <td data-label="Type de trouble">Dyspraxie</td>
+                    <td data-label="Symptômes">Difficulté de coordination</td>
+                    <td data-label="Solutions">Ergothérapie</td>
+                </tr>
+            </tbody>
+        </table>
+        <!-- Tableau comparatif des troubles Dys -->
+
+    </main>
+    <!-- Contenu principal de la page -->
+
+
+    <!-- Pied de page avec liens de partage sur les réseaux sociaux et bouton de retour en haut -->
+    <footer>
+        <div class="social-share">
+            <a href="https://www.facebook.com/ffdys/" target="_blank" class="social-link facebook">Partager sur Facebook</a>
+            <a href="https://x.com/?lang-en=" target="_blank" class="social-link twitter">Partager sur Twitter</a>
+        </div>
+        <button id="backToTop" title="Cliquez ici pour revenir en haut de la page">&#8679;</button>
+    </footer>
+    <!-- Pied de page avec liens de partage sur les réseaux sociaux et bouton de retour en haut -->
+
+    <!-- Inclusion de la bibliothèque Leaflet pour la carte interactive -->
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+    <!-- Inclusion du fichier JavaScript personnalisé pour la page -->
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
